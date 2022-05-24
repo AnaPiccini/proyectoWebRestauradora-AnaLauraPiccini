@@ -1,0 +1,182 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    box-shadow: none;
+    text-decoration-line: none;
+    background-color: whitesmoke;
+    font-family: "Latin Modern Roman";
+
+}
+
+/* Header */
+
+header {
+    border: whitesmoke 20px solid;
+}
+
+
+.logo {
+    width: 60px;
+    height: 60px;
+    font-style: oblique;  
+}
+.logo-escrito {
+    /* Problemas sin resolver: 
+    1- no puedo hacer que el texto me quede en medio del logo (a la derecha)
+    2- quitar el formato de hipervinculo */
+    font-weight: bold;
+    text-decoration-color: grey;
+    box-shadow: none;
+    padding-left: 80px;
+}
+
+.menu {
+    /* Problemas sin resolver:
+    1- no puedo ubicarlo paralelo al logo (más arriba)
+    2- quitar el formato de hipervinculo */
+    line-height: 150%;
+    font-style: oblique;
+    box-shadow: none;
+    color: grey;
+    text-decoration-color: grey;
+    text-align: right;
+    list-style: none;
+}
+
+hr{
+    border: 0;
+    border-top: 2px solid grey;
+    margin: 0%; 
+    border-bottom: 2px solid grey;
+    height:0;
+}
+/* Fin del header */
+/* Main */
+
+main{
+    border-left: whitesmoke 20px  solid;
+    border-right: whitesmoke 20px  solid;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+.muestrario-rubros{
+    /* Problemas sin resolver: 
+    1- Falta centrar las palabras y darle una vuelta de rosca a eso */
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: space-around;
+}
+
+.rubro {
+    width: 100%;
+    height: 100%;
+    border: whitesmoke 3px  solid;
+}
+
+
+
+.muestrario-objeto{
+    /* Problemas sin resolver: 
+    1- Falta centrar las palabras y darle una vuelta de rosca a eso
+    2- No me deja cambiarle la letra */
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: space-around;
+ 
+
+}
+
+
+
+.obejto {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+#tiendaonline {
+    width: 100%;      
+}
+
+h1 {
+    font-style: oblique;
+    box-shadow: none;
+    color: grey;
+    text-decoration-color: grey;
+    text-align: center;
+    list-style: none;
+    
+}
+/* Fin del main */
+/* Footer */
+footer {
+    border: whitesmoke 20px  solid;
+
+}
+.nosotros-titulo{
+    font-weight: bold;
+}
+
+.nosotros-descripcion{
+    /* Problemas sin resolver: 
+    1- no se como hacer el borde mas redondeado
+    2- no se como ajustar mejor el texto al recuadro
+    3- me falta mejorarlo en varios aspectos */
+    border: 2px solid grey;
+    width: 300px;
+    height: 50px;
+    text-align: justify;
+    text-align: unset;
+    font-style: oblique;
+    padding: 1%;
+}
+
+.social { 
+    /* Problemas sin resolver: 
+    1- no los pude alinear a la derecha
+    2- no pude sacar el formato de hipervinculo
+    3- no pude poner el texto a la izquierda del icono
+    4- no pude sacarle el fondo a las imagenes (me falta pulirlo bastante) */ 
+    display: flex;
+    text-decoration: none;
+    line-height: 150%;
+    font-style: oblique;
+    color: grey;
+    text-decoration-color: grey;
+    list-style: none;  
+    width: 40px;
+    height: 40px;
+
+}
+
+
+.social-icono{
+    width: 2%;
+    height: 2%;
+    text-decoration: none;
+    vertical-align: auto;
+    text-align: right;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+}
+
+.social-whatsapp { grid-area: 1 / 4 / 2 / 5; }
+.social-instagram { grid-area: 2 / 4 / 3 / 5; }
+.social-facebook { grid-area: 3 / 4 / 4 / 5; }
+.social-pinterest { grid-area: 4 / 4 / 5 / 5; }
+
+
+/* Fin del footer */
