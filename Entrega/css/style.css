@@ -1,50 +1,59 @@
 * {
     margin: 0%;
     padding: 0%;
-    text-decoration: none;
-    box-shadow: none;
-    text-decoration-line: none;
-    background-color: whitesmoke;
-    font-family: "Latin Modern Roman";
-
 }
+
+/* body */
+body {
+    background-color: #fff5e8;
+    font-family: serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* A VER: SE PUEDE PONER UNA LETRA EXTERNA? POR EJEMPLO ESTA??
+    https://www.dafont.com/es/a-day-without-sun.font */
+}
+
 
 /* Header */
 
 header {
-    border: whitesmoke 20px solid;
+    border: #fff5e8 20px solid;
+}
+
+.presentacion{
+    display: flex;
+    justify-content: space-between;
 }
 
 
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     font-style: oblique;  
 }
 .logo-escrito {
     /* Problemas sin resolver: 
     1- no puedo hacer que el texto me quede en medio del logo (a la derecha)
     2- quitar el formato de hipervinculo */
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row wrap;
+    text-indent: 3%;
     font-weight: bold;
-    text-decoration-color: grey;
-    box-shadow: none;
-    padding-left: 80px;
+    text-decoration-color: #fff5e8;
+    padding-left: 3% 3%;
 }
 
 .menu {
     /* Problemas sin resolver:
-    1- no puedo ubicarlo paralelo al logo (más arriba)
-    2- quitar el formato de hipervinculo */
+    1- quitar el formato de hipervinculo */
     line-height: 150%;
     font-style: oblique;
-    box-shadow: none;
-    color: grey;
     text-decoration-color: grey;
     text-align: right;
     list-style: none;
 }
 
 hr{
+    width: 100%;
     border: 0;
     border-top: 2px solid grey;
     margin: 0%; 
@@ -55,56 +64,58 @@ hr{
 /* Main */
 
 main{
-    border-left: whitesmoke 20px  solid;
-    border-right: whitesmoke 20px  solid;
+    border-left: #fff5e8 20px  solid;
+    border-right:#fff5e8 20px  solid;
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%; 
+    width: 100%;
+    height: 100%;
 }
 
+.muestrario {
+    grid-area: muestrario;
+}
 .muestrario-rubros{
-    /* Problemas sin resolver: 
-    1- Falta centrar las palabras y darle una vuelta de rosca a eso */
-    display: flex;
-    max-width: 100%;
-    max-height: 100%;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:  1% ;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
 }
 
 .rubro {
     width: 100%;
     height: 100%;
-    border: whitesmoke 3px  solid;
+    border: #fff5e8 3%  solid;
+    border-radius: #fff5e8 3%  solid ;
+    margin-top: #fff5e8 3%  solid ;
+    margin-block-end:#fff5e8 3%  solid ;;
 }
 
-
+.fin-muestrario{
+    width: 3%;
+}
 
 .muestrario-objeto{
-    /* Problemas sin resolver: 
-    1- Falta centrar las palabras y darle una vuelta de rosca a eso
-    2- No me deja cambiarle la letra */
     display: flex;
     max-width: 100%;
     max-height: 100%;
     justify-content: space-around;
- 
-
 }
-
-
 
 .obejto {
     width: 100%;
     height: 100%;
+    background-color: #fff5e8;
 }
 
-
-
-
-#tiendaonline {
-    width: 100%;      
+.tiendaonline {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;      
 }
 
 h1 {
@@ -119,8 +130,16 @@ h1 {
 /* Fin del main */
 /* Footer */
 footer {
-    border: whitesmoke 20px  solid;
+    border-left: #fff5e8 20px  solid;
+    border-right:#fff5e8 20px  solid;
+}
 
+.footer-social{
+    display: flex;
+    justify-content: space-between;
+}
+.nosotros {
+    margin: 2px;
 }
 .nosotros-titulo{
     font-weight: bold;
@@ -129,12 +148,11 @@ footer {
 .nosotros-descripcion{
     /* Problemas sin resolver: 
     1- no se como hacer el borde mas redondeado
-    2- no se como ajustar mejor el texto al recuadro
-    3- me falta mejorarlo en varios aspectos */
+    2- no se como ajustar mejor el texto al recuadro */
+    
     border: 2px solid grey;
     width: 300px;
     height: 50px;
-    text-align: justify;
     text-align: unset;
     font-style: oblique;
     padding: 1%;
@@ -142,41 +160,25 @@ footer {
 
 .social { 
     /* Problemas sin resolver: 
-    1- no los pude alinear a la derecha
-    2- no pude sacar el formato de hipervinculo
-    3- no pude poner el texto a la izquierda del icono
-    4- no pude sacarle el fondo a las imagenes (me falta pulirlo bastante) */ 
+    1- no pude sacar el formato de hipervinculo
+    2- no pude sacarle el fondo a las imagenes (me falta pulirlo bastante) */ 
+    margin: 2px;
     display: flex;
-    text-decoration: none;
-    line-height: 150%;
+    justify-content: flex-end;
+    align-items: unset;
+    text-align: right;
+    list-style: none;
     font-style: oblique;
     color: grey;
-    text-decoration-color: grey;
-    list-style: none;  
-    width: 40px;
-    height: 40px;
+    text-decoration-color: grey;     
+
 
 }
 
-
-.social-icono{
-    width: 2%;
-    height: 2%;
+.social-icono{  
+    max-height: 15%;
     text-decoration: none;
-    vertical-align: auto;
     text-align: right;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
 }
-
-.social-whatsapp { grid-area: 1 / 4 / 2 / 5; }
-.social-instagram { grid-area: 2 / 4 / 3 / 5; }
-.social-facebook { grid-area: 3 / 4 / 4 / 5; }
-.social-pinterest { grid-area: 4 / 4 / 5 / 5; }
-
 
 /* Fin del footer */

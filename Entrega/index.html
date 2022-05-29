@@ -11,12 +11,11 @@
 <body>
     <!-- Header -->
     <header>
-            <nav>
-                <a href="index.html">
-                 
-                    <img class="logo" src="Iconos/Logo.PNG"  alt="Logo de nuestra marca">
-                    <p class="logo-escrito"> ESTER RIVOLLIER | RESTAURACIÓN </p>
+            <nav class="presentacion">
+                <a href="index.html" class="logo-escrito">
                 
+                    <img class="logo" src="Iconos/Logo.PNG"  alt="ESTER RIVOLLIER | RESTAURACIÓN">
+                               
                 </a>          
                 <ul class="menu">
                     <li><a href="sillasSillonesYBancos.html">Sillas, sillones y bancos</a></li>
@@ -26,9 +25,8 @@
                     <li><a href="tiendaOnline.html">Tienda online</a></li>
                 </ul>
             </nav>
-            <hr>
+            <hr class="fin-header">
     </header>
-    <!-- La linea que quiero hacer no se si la debo hacer aca con HTML o con CSS -->
     <!-- Fin del Header -->
 
     <!-- Secciones de productos restaurados -->
@@ -56,11 +54,13 @@
                    <p>ROPEROS, VAJILLEROS Y MÁS</p>
               </div>
          </div>
-         
+         <br class="fin-muestrario">
+         <br>
+         <br>
          <!-- Tienda online, va en forma horizontal -->
          <div class="tiendaonline">       
                <a href="tiendaOnline.html">
-                <img id="tiendaonline" src="./Imagenes y videos/TiendaOnlineBN.jpg" alt=""></a>
+                <img class="tiendaonline" src="./Imagenes y videos/TiendaOnlineBN.jpg" alt=""></a>
                 <p>TIENDA ONLINE</p> 
          </div>
       </div>
@@ -77,32 +77,28 @@
     </main>
 
     <footer>
-        <div class="nosotros">
-            <div class="nosotros-titulo">
-                <p>QUIENES SOMOS</p>
-                <br>
-            </div>
-            <div class="nosotros-descripcion">
-                <p>Somos un emprendimiento familiar orientado a la restauración de muebles.</p>
-            </div>
-        </div>    
-        
-        
-        <a class="social">
+      <div class="footer-social">  
+         <div class="nosotros">
+            <p class="nosotros-titulo">QUIENES SOMOS</p>
+              <br>       
+            <p class="nosotros-descripcion"> Somos un emprendimiento familiar orientado a la restauración de muebles.</p>      
+         </div>   
+         <!--Social-->
+         <div class="social">
             <a href="https://www.whatsapp.com/?lang=es" rel="" class="social-whatsapp"> 
-                <img src="Iconos/Whatsapp.png" alt="Whatsapp" class="social-icono"/> 
-                Whatsapp </a>
+                <img class="social-icono" src="Iconos/Whatsapp.png" alt="Whatsapp"/> 
+                </a>
             <a href="https://www.instagram.com/esterrivollier/" rel="noopener noreferrer" class="social-instagram"> 
-                <img src="Iconos/Instagram.png" alt="Instagram" class="social-icono"/> 
-                Instagram </a>
+                <img class="social-icono" src="Iconos/Instagram.png" alt="Instagram"/> 
+                 </a>
              <a href="https://www.facebook.com/Ester-Rivollier-Restauraci%C3%B3n-104762495561620" rel="noopener noreferrer" class="social-facebook"> 
-                <img src="Iconos/Facebook.png" alt="Facebook" class="social-icono"/> 
-                Facebook </a>
+                <img class="social-icono" src="Iconos/Facebook.png" alt="Facebook"/> 
+                 </a>
              <a href="https://ar.pinterest.com/" rel="noopener noreferrer" class="social-pinterest"> 
-                <img src="Iconos/Pinterest.png" alt="Pinterest" class="social-icono"/> 
-                Pinterest </a>                     
-         </a>
-     
+                <img class="social-icono" src="Iconos/Pinterest.png" alt="Pinterest"/> 
+                 </a>                   
+         </div>
+      </div>       
     </footer>
 </body>
 </html>
