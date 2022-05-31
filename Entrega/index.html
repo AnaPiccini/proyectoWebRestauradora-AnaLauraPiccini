@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESTER RIVOLLIER | Restauración</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="Iconos/Favicon.PNG">
+    <!-- CDN de Bootstrap del CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Header -->
@@ -18,39 +20,41 @@
                                
                 </a>          
                 <ul class="menu">
-                    <li><a href="sillasSillonesYBancos.html">Sillas, sillones y bancos</a></li>
-                    <li><a href="mesasEscritoriosYMas.html">Mesas, escritorios y más</a></li>
-                    <li><a href="espejosCamasRespaldos.html">Espejos, camas y respaldos</a></li>
-                    <li><a href="roperosVajillerosYMas.html">Roperos, vajilleros y más</a></li>
-                    <li><a href="tiendaOnline.html">Tienda online</a></li>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item"><a href="sillasSillonesYBancos.html" class="list">Sillas, sillones y bancos</a></li>
+                        <li class="list-group-item"><a href="mesasEscritoriosYMas.html" class="list">Mesas, escritorios y más</a></li>
+                        <li class="list-group-item"><a href="espejosCamasRespaldos.html" class="list">Espejos, camas y respaldos</a></li>
+                        <li class="list-group-item"><a href="roperosVajillerosYMas.html" class="list">Roperos, vajilleros y más</a></li>
+                        <li class="list-group-item"><a href="tiendaOnline.html" class="list">Tienda online</a></li>
+                    </ul>
                 </ul>
             </nav>
             <hr class="fin-header">
     </header>
     <!-- Fin del Header -->
-
+    
     <!-- Secciones de productos restaurados -->
     <main>
-      <div class="muestrario"> 
-         <div class="muestrario-rubros">
-              <div class="rubro">
-                 <a href="sillasSillonesYBancos.html">
-                   <img src="./Imagenes y videos/SillasSillonesYBancosBN.jpg" alt=""></a>
+      <div class="muestrario container"> 
+         <div class="muestrario-rubros row">
+              <div class="rubro col-md-3 col-xs-12">
+                 <a href="sillasSillonesYBancos.html img-rounded">
+                   <img src="./Imagenes y videos/SillasSillonesYBancosBN.jpg" class="img-rounded" alt=""></a>
                    <p>SILLAS, SILLONES Y BANCOS</p>
               </div>
-              <div class="rubro">
+              <div class="rubro col-md-3 col-xs-12 img-rounded">
                    <a href="mesasEscritoriosYMas.html">
-                   <img src="./Imagenes y videos/MesasEscritoriosYMasBN.jpg" alt=""></a>
+                   <img src="./Imagenes y videos/MesasEscritoriosYMasBN.jpg" class="img-rounded" alt=""></a>
                    <p>MESAS, ESCRITORIOS Y MÁS</p>
               </div>
-              <div class="rubro">
+              <div class="rubro col-md-3 col-xs-12 img-rounded">
                    <a href="espejosCamasRespaldos.html">
-                   <img src="./Imagenes y videos/EspejosCamasRespaldos.jpg" alt=""></a>
+                   <img src="./Imagenes y videos/EspejosCamasRespaldos.jpg" class="img-rounded" alt=""></a>
                    <p>ESPEJOS, CAMAS, RESPALDOS</p>
               </div>
-              <div class="rubro">        
+              <div class="rubro col-md-3 col-xs-12 img-rounded">        
                    <a href="roperosVajillerosYMas.html">
-                   <img src="./Imagenes y videos/RoperosVajillerosYMasBN.jpg" alt=""></a>
+                   <img src="./Imagenes y videos/RoperosVajillerosYMasBN.jpg" class="img-rounded" alt=""></a>
                    <p>ROPEROS, VAJILLEROS Y MÁS</p>
               </div>
          </div>
@@ -60,7 +64,7 @@
          <!-- Tienda online, va en forma horizontal -->
          <div class="tiendaonline">       
                <a href="tiendaOnline.html">
-                <img class="tiendaonline" src="./Imagenes y videos/TiendaOnlineBN.jpg" alt=""></a>
+                <img class="tiendaonline img-rounded"  src="./Imagenes y videos/TiendaOnlineBN.jpg" alt=""></a>
                 <p>TIENDA ONLINE</p> 
          </div>
       </div>
@@ -75,14 +79,16 @@
       <br>
 
     </main>
+<!-- Fin Main -->
+<!-- Footer -->   
 
     <footer>
       <div class="footer-social">  
          <div class="nosotros">
-            <p class="nosotros-titulo">QUIENES SOMOS</p>
-              <br>       
+            <p class="nosotros-titulo">QUIENES SOMOS</p>            
             <p class="nosotros-descripcion"> Somos un emprendimiento familiar orientado a la restauración de muebles.</p>      
          </div>   
+         
          <!--Social-->
          <div class="social">
             <a href="https://www.whatsapp.com/?lang=es" rel="" class="social-whatsapp"> 
@@ -100,5 +106,7 @@
          </div>
       </div>       
     </footer>
+    <!-- CDN de Bootstrap del JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

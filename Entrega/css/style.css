@@ -42,6 +42,15 @@ header {
     padding-left: 3% 3%;
 }
 
+.list-group-item {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.list-group-item:hover {
+    transform: scale(1.05);
+    all: height 2s, width 1s;  
+    background-color: grey;}
 .menu {
     /* Problemas sin resolver:
     1- quitar el formato de hipervinculo */
@@ -50,6 +59,21 @@ header {
     text-decoration-color: grey;
     text-align: right;
     list-style: none;
+}
+
+.list-group-item {
+    background-color: #fff5e8;
+    text-decoration: none;
+    box-shadow: none;
+    text-decoration-color: grey;
+}
+
+.list{
+    list-style: none;
+    text-decoration: none;
+    font-style: oblique;
+    box-shadow: none;
+    text-decoration-color: grey;    
 }
 
 hr{
@@ -96,15 +120,9 @@ img {
 }
 
 .rubro:hover {
+    transform: scale(1.05);
+    all: height 2s, width 1s;
     
-    height: 100%;
-    width: 300px;
-    transition: height 2s, width 1s;
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> rama1
 }
 
 .fin-muestrario{
@@ -128,6 +146,11 @@ img {
     width: 100%;
     text-align: center;
     font-weight: bold;      
+}
+
+.tiendaonline:hover {
+    transform: scale(1.05);
+    all: height 2s, width 1s;
 }
 
 h1 {
@@ -155,6 +178,7 @@ footer {
 }
 .nosotros-titulo{
     font-weight: bold;
+    text-align: center;
 }
 
 .nosotros-descripcion{
@@ -164,8 +188,8 @@ footer {
     
     border: 2px solid grey;
     width: 300px;
-    height: 50px;
-    text-align: unset;
+    height: 70px;
+    text-align: center;
     font-style: oblique;
     padding: 1%;
 }
