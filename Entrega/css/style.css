@@ -47,7 +47,7 @@ header {
     justify-content: flex-end;
 }
 
-.list-group-item:hover {
+.img-rounded:hover {
     transform: scale(1.05);
     all: height 2s, width 1s;  
     background-color: grey;}
